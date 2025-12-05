@@ -6,10 +6,10 @@ const STORAGE_KEYS = {
 };
 
 const HERO_IMAGES = [
-  "https://file.notion.so/f/f/e565ec7a-d3dd-462f-b210-472de9cd79f1/5974b12d-51d7-403e-befa-27474c8ca2f7/15d46621279c62be87262887b6894b73.jpg?table=block&id=2c0f7554-1d7c-8009-b4ed-ffa4eda1e18d&spaceId=e565ec7a-d3dd-462f-b210-472de9cd79f1&expirationTimestamp=1764950400000&signature=QEroubA9uqioc_2iF3Pqnk85sFCPl-gV3CzX9w32bjY&downloadName=15d46621279c62be87262887b6894b73.jpg",
-  "https://file.notion.so/f/f/e565ec7a-d3dd-462f-b210-472de9cd79f1/cb33c839-72de-49f1-aff4-f42c9402ce26/d41b1e543bd86bf2e204206941013e54.jpg?table=block&id=2c0f7554-1d7c-8092-a4d9-f97002888e01&spaceId=e565ec7a-d3dd-462f-b210-472de9cd79f1&expirationTimestamp=1764950400000&signature=jwr4-One6gXJnLcyrqMZAWzgEqDwUe5GnWt4lnV1hyQ&downloadName=d41b1e543bd86bf2e204206941013e54.jpg",
-  "https://file.notion.so/f/f/e565ec7a-d3dd-462f-b210-472de9cd79f1/32a084d4-fe7a-43b4-ab63-0e3b13033318/43842023a66cfc6ab84da1827f03dda8.jpg?table=block&id=2c0f7554-1d7c-8072-877b-f0999dbec21c&spaceId=e565ec7a-d3dd-462f-b210-472de9cd79f1&expirationTimestamp=1764950400000&signature=XKJSCVkeMCGupLV5H7njeZP7hL-Oc7b-hiSpnnOHlgM&downloadName=43842023a66cfc6ab84da1827f03dda8.jpg",
-  "https://file.notion.so/f/f/e565ec7a-d3dd-462f-b210-472de9cd79f1/d00969f5-b205-44cd-b98a-09c4117da381/ce239eaef149aaa4d45fcb8c89b86c42.jpg?table=block&id=2c0f7554-1d7c-8050-8fa2-d40a0c5a885c&spaceId=e565ec7a-d3dd-462f-b210-472de9cd79f1&expirationTimestamp=1764950400000&signature=Qn7NLjBYc94foWuwZpeA1Ou8dL7E1-3ii4oBcyQuwuQ&downloadName=ce239eaef149aaa4d45fcb8c89b86c42.jpg"
+  "https://g-2606.img.wecandeo.com/codi/15d46621279c62be87262887b6894b73.jpg",
+  "https://g-2606.img.wecandeo.com/codi/d41b1e543bd86bf2e204206941013e54.jpg",
+  "https://g-2606.img.wecandeo.com/codi/43842023a66cfc6ab84da1827f03dda8.jpg",
+  "https://g-2606.img.wecandeo.com/codi/ce239eaef149aaa4d45fcb8c89b86c42.jpg"
 ];
 
 const state = {
