@@ -1,0 +1,12 @@
+{
+  "location": "성남시 중원구 성남동",
+  "date": "2025-11-20T08:00:00+09:00",
+  "temp": 7,
+  "feelsLike": 4,
+  "humidity": 68,
+  "rainChance": 30,
+  "fineDust": "보통",
+  "uvIndex": 2,
+  "summary": "약한 바람과 함께 쌀쌀해요. 가벼운 아우터가 필요해요.",
+  "icon": "cloudy-day"
+}

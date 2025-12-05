@@ -1,0 +1,11 @@
+{
+  "name": "다온",
+  "age": 4,
+  "gender": "여아",
+  "height": 102,
+  "weight": 16.5,
+  "skinType": "sensitive",
+  "allergies": ["wool", "dust"],
+  "daycareRules": ["후드 금지", "실내화 필수", "긴 머리 묶기"]
+}
+

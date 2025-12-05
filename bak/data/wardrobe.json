@@ -1,0 +1,94 @@
+[
+  {
+    "id": "top-cream-tee",
+    "name": "크림 코튼 티셔츠",
+    "category": "top",
+    "season": ["spring", "fall"],
+    "warmthLevel": 2,
+    "material": "cotton",
+    "colors": ["cream"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 12,
+    "lastFeedback": { "comfort": "good", "temperature": "ok" }
+  },
+  {
+    "id": "top-mint-sweat",
+    "name": "민트 스웻셔츠",
+    "category": "top",
+    "season": ["fall", "winter"],
+    "warmthLevel": 3,
+    "material": "cotton",
+    "colors": ["mint"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 5,
+    "lastFeedback": { "comfort": "bad", "temperature": "cold" }
+  },
+  {
+    "id": "bottom-jean",
+    "name": "소프트 데님 팬츠",
+    "category": "bottom",
+    "season": ["spring", "fall"],
+    "warmthLevel": 2,
+    "material": "denim",
+    "colors": ["navy"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 8,
+    "lastFeedback": { "comfort": "good", "temperature": "ok" }
+  },
+  {
+    "id": "bottom-warm-legging",
+    "name": "기모 레깅스",
+    "category": "bottom",
+    "season": ["winter"],
+    "warmthLevel": 4,
+    "material": "fleece",
+    "colors": ["charcoal"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 15,
+    "lastFeedback": { "comfort": "good", "temperature": "cold" }
+  },
+  {
+    "id": "outer-puffer",
+    "name": "라이트 구스 패딩",
+    "category": "outer",
+    "season": ["winter"],
+    "warmthLevel": 5,
+    "material": "puffer",
+    "colors": ["cream"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 4,
+    "lastFeedback": { "comfort": "good", "temperature": "ok" }
+  },
+  {
+    "id": "outer-windbreaker",
+    "name": "파스텔 윈드브레이커",
+    "category": "outer",
+    "season": ["spring"],
+    "warmthLevel": 2,
+    "material": "windbreaker",
+    "colors": ["sky"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 6,
+    "lastFeedback": { "comfort": "good", "temperature": "hot" }
+  },
+  {
+    "id": "socks-pastel",
+    "name": "파스텔 양말",
+    "category": "socks",
+    "season": ["spring", "fall"],
+    "warmthLevel": 1,
+    "material": "cotton",
+    "colors": ["lavender"],
+    "isLaundry": false,
+    "sizeStatus": "ok",
+    "wearCount": 20,
+    "lastFeedback": { "comfort": "good", "temperature": "ok" }
+  }
+]
+

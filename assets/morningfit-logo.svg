@@ -1,0 +1,49 @@
+<svg width="512" height="270" viewBox="0 0 512 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="suitGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FF4E8B"/>
+      <stop offset="100%" stop-color="#FF0F76"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE566"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+    <linearGradient id="rattleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6BE7E4"/>
+      <stop offset="100%" stop-color="#52C4FF"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1C2B4A"/>
+      <stop offset="100%" stop-color="#223A73"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(28, 43, 74, 0.15)"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(40, 30)" filter="url(#shadow)">
+    <!-- Onesie -->
+    <path d="M120 10C100 10 90 0 90 0S70-10 50 10C30 30 50 70 50 70L70 80V200H180V80L200 70C200 70 220 30 200 10C180-10 160 0 160 0S150 10 130 10H120Z" fill="url(#suitGradient)"/>
+    <path d="M70 80V200" stroke="#C00052" stroke-width="8" stroke-linecap="round"/>
+    <path d="M180 80V200" stroke="#C00052" stroke-width="8" stroke-linecap="round"/>
+    <path d="M125 20V200" stroke="#C00052" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="85" cy="45" r="12" fill="#FF6AA6"/>
+    <circle cx="165" cy="110" r="10" fill="#FF6AA6"/>
+  </g>
+
+  <!-- Floating icons -->
+  <circle cx="270" cy="38" r="8" fill="#54E36A"/>
+  <path d="M315 55c-7 0-12-5-12-12s5-12 12-12 12 5 12 12-5 12-12 12zm0 8c11 0 20-9 20-20s-9-20-20-20-20 9-20 20 9 20 20 20z" fill="url(#accentGradient)"/>
+  <circle cx="352" cy="70" r="16" fill="#9FFFC7"/>
+  <circle cx="352" cy="70" r="10" fill="url(#rattleGradient)"/>
+  <rect x="349" y="84" width="6" height="20" rx="3" fill="#9FFFC7"/>
+  <circle cx="352" cy="108" r="6" fill="url(#rattleGradient)"/>
+
+  <!-- Korean text -->
+  <g transform="translate(250, 155)" fill="url(#textGradient)" font-family="'Noto Sans KR', 'Pretendard', sans-serif" font-weight="700" font-size="72">
+    <text y="0">모닝핏</text>
+  </g>
+</svg>
+
+
+

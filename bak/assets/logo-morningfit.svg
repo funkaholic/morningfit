@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="72" r="72" fill="#FDF4E3" />
+  <circle cx="100" cy="72" r="66" stroke="#C0F0B5" stroke-width="10" />
+  <circle cx="100" cy="72" r="52" fill="#FFF9F0" filter="url(#shadow)" />
+  <g transform="translate(60 26)">
+    <path d="M40 20C30 20 24 10 24 10S15 2 6 12C-3 22 7 40 7 40L20 44V88H80V44L93 40C93 40 103 22 94 12C85 2 76 10 76 10S70 20 60 20H40Z" fill="#FF6AA6"/>
+    <path d="M20 44L20 88" stroke="#FF4E84" stroke-width="4" stroke-linecap="round"/>
+    <path d="M80 44V88" stroke="#FF4E84" stroke-width="4" stroke-linecap="round"/>
+    <path d="M50 22L50 88" stroke="#FF4E84" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <circle cx="65" cy="48" r="6" fill="#FFC857"/>
+  <circle cx="135" cy="100" r="5" fill="#8FD3C7"/>
+  <circle cx="125" cy="38" r="5" fill="#82C1FF"/>
+  <text x="100" y="168" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="28" font-weight="700" fill="#1F2D3D">
+    모닝핏
+  </text>
+</svg>
+

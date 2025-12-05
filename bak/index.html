@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 로컬에서 테스트: 터미널에서 `npx serve` 또는 `python -m http.server` 등 간단한 정적 서버를 띄우고 http://localhost:8000 에 접속하세요 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MorningFit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero slide-down">
+    <div class="logo">
+      <img src="assets/logo-morningfit.svg" alt="모닝핏 로고" class="logo-img">
+      <div>
+        <p class="logo-title logo-type">모닝핏</p>
+        <span class="logo-sub">MorningFit capsule kidswear</span>
+      </div>
+    </div>
+    <div class="today-meta">
+      <p class="today-date">2025.11.20 (목)</p>
+      <p class="today-location">성남시 중원구 성남동</p>
+    </div>
+  </header>
+
+  <section class="weather-bar slide-down delay-1">
+    <div class="weather-main">
+      <div class="weather-icon">🌤️</div>
+      <div>
+        <p class="temp-now"><span id="temp-value">--</span>°C</p>
+        <p class="temp-feel">체감 <span id="feels-like">--</span>°C</p>
+      </div>
+    </div>
+    <div class="weather-tags">
+      <span class="tag" id="rain-tag">강수 --%</span>
+      <span class="tag" id="dust-tag">미세먼지 --</span>
+      <span class="tag" id="uv-tag">UV --</span>
+    </div>
+  </section>
+
+  <main>
+    <section class="profile-card fade-in">
+      <div class="profile-head">
+        <div>
+          <p class="label">아이 프로필</p>
+          <h2 id="child-name">-</h2>
+          <p id="child-age">-</p>
+        </div>
+        <button class="ghost-btn" disabled>프로필 편집 (추후)</button>
+      </div>
+      <div class="profile-body">
+        <p id="child-stats">키/몸무게 -</p>
+        <p class="profile-note">데모: 프로필은 data/profile.json에서 관리돼요.</p>
+        <div class="rules-list" id="rules-list"></div>
+      </div>
+    </section>
+
+    <section class="condition-card fade-in delay-1">
+      <h3>오늘의 조건</h3>
+      <form id="conditions-form">
+        <label>
+          위치
+          <select name="location">
+            <option>성남시 중원구 성남동</option>
+            <option>서울시 송파구 잠실동</option>
+          </select>
+        </label>
+        <div class="input-group">
+          <p>행선지</p>
+          <div class="toggle-group" data-field="destination">
+            <button type="button" data-value="daycare" class="active">어린이집</button>
+            <button type="button" data-value="indoor">실내</button>
+            <button type="button" data-value="outdoor">야외놀이</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <p>활동</p>
+          <div class="toggle-group" data-field="activity">
+            <button type="button" data-value="indoor" class="active">실내놀이</button>
+            <button type="button" data-value="outdoor">바깥놀이</button>
+            <button type="button" data-value="mixed">혼합</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <p>오늘 컨디션</p>
+          <div class="toggle-group" data-field="condition">
+            <button type="button" data-value="normal" class="active">보통</button>
+            <button type="button" data-value="sensitive">예민</button>
+            <button type="button" data-value="cold">감기</button>
+          </div>
+        </div>
+        <label>
+          하원 시간대
+          <select name="pickup">
+            <option value="15">15시</option>
+            <option value="16">16시</option>
+            <option value="17">17시</option>
+          </select>
+        </label>
+        <button type="submit" class="primary-btn">등원룩 추천 받기</button>
+      </form>
+    </section>
+
+    <section class="recommendation-area">
+      <div class="cards-header">
+        <h3>데일리 카드 3장</h3>
+        <p>오늘 컨디션과 날씨에 맞는 캡슐 룩을 골라보세요.</p>
+      </div>
+      <div class="cards-wrapper" id="cards-wrapper"></div>
+      <div class="cards-pager" id="cards-pager"></div>
+    </section>
+
+    <section class="feedback-panel hidden" id="feedback-panel">
+      <h3>피드백 & 세탁/사이즈</h3>
+      <div class="feedback-group">
+        <p>체감</p>
+        <div class="toggle-group small" data-field="temperatureFeedback">
+          <button type="button" data-value="cold">춥다</button>
+          <button type="button" data-value="ok" class="active">딱 좋아</button>
+          <button type="button" data-value="hot">덥다</button>
+        </div>
+      </div>
+      <div class="feedback-group">
+        <p>편안함</p>
+        <div class="toggle-group small" data-field="comfortFeedback">
+          <button type="button" data-value="good" class="active">편했어요</button>
+          <button type="button" data-value="bad">불편했어요</button>
+        </div>
+      </div>
+      <div class="feedback-group checkboxes">
+        <label><input type="checkbox" id="stain-check"> 얼룩</label>
+        <label><input type="checkbox" id="mess-check"> 오염</label>
+        <label><input type="checkbox" id="laundry-check"> 세탁 필요</label>
+      </div>
+      <div class="feedback-group">
+        <label class="toggle-switch">
+          <input type="checkbox" id="laundry-toggle">
+          <span>세탁 바구니로 보내기</span>
+        </label>
+      </div>
+      <div class="feedback-group warning" id="size-warning" aria-live="polite"></div>
+      <button class="primary-btn outline" id="feedback-submit">피드백 기록하기</button>
+    </section>
+
+    <section class="checklist-card">
+      <h3>등원 가방 체크리스트</h3>
+      <ul id="checklist"></ul>
+    </section>
+
+    <section class="ootd-card">
+      <h3>오늘의 OOTD</h3>
+      <div class="ootd-upload">
+        <label class="upload-btn">
+          <input type="file" accept="image/*" id="ootd-input">
+          오늘 OOTD 업로드
+        </label>
+        <div class="preview" id="ootd-preview">
+          <p>선택한 사진이 여기에 표시돼요. 얼굴은 자동 모자이크 처리된다고 가정합니다.</p>
+        </div>
+      </div>
+      <div class="share-card">
+        <p>공유용 미리보기 (준비 중)</p>
+        <button class="ghost-btn" disabled>커뮤니티 공유 (추후)</button>
+        <span class="tag muted">베타 준비 중</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">오늘 피드백이 기록되었어요</div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+

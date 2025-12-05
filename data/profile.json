@@ -1,0 +1,12 @@
+{
+  "name": "하린",
+  "age": 4,
+  "gender": "girl",
+  "height": 102,
+  "weight": 16.5,
+  "skinType": "sensitive",
+  "allergies": ["wool", "dust"],
+  "daycareRules": ["후드 금지", "실내화 필수", "여벌 옷 1세트"],
+  "favoriteColors": ["cream", "lavender", "mint"],
+  "notes": "민감성 피부라 목, 손목 부분이 부드러운 소재를 선호해요."
+}
